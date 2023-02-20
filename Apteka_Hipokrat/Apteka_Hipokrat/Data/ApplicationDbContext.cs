@@ -14,6 +14,6 @@ namespace Apteka_Hipokrat.Data
         public virtual DbSet<Producer> Producers { get; set; }
         public virtual DbSet<SideEffect> SideEffects { get; set; }
         public virtual DbSet<MedicineType> MedicineTypes { get; set; }
-        public virtual DbSet<Shopping> shoppings { get; set; }
+        public virtual DbSet<Shopping> Shoppings { get; set; }
     }
 }

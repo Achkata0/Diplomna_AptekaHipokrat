@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat.csproj": {}
+    "C:\\Users\\STUDENTS-STEM-3\\Desktop\\Diplomna_AptekaHipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat.csproj": {
+    "C:\\Users\\STUDENTS-STEM-3\\Desktop\\Diplomna_AptekaHipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat.csproj",
+        "projectUniqueName": "C:\\Users\\STUDENTS-STEM-3\\Desktop\\Diplomna_AptekaHipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat.csproj",
         "projectName": "Apteka_Hipokrat",
-        "projectPath": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\obj\\",
+        "projectPath": "C:\\Users\\STUDENTS-STEM-3\\Desktop\\Diplomna_AptekaHipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat.csproj",
+        "packagesPath": "C:\\Users\\STUDENTS-STEM-3\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\STUDENTS-STEM-3\\Desktop\\Diplomna_AptekaHipokrat\\Apteka_Hipokrat\\Apteka_Hipokrat\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\STUDENTS-STEM-3\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
