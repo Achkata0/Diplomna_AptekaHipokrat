@@ -4,20 +4,22 @@ using Apteka_Hipokrat.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Apteka_Hipokrat.Data.Migrations
+namespace Apteka_Hipokrat.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230222161238_Achko")]
+    partial class Achko
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.11")
+                .HasAnnotation("ProductVersion", "6.0.14")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -53,16 +55,13 @@ namespace Apteka_Hipokrat.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(10,2)");
 
                     b.Property<int>("ProducerId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("RegisterON")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("ShoppingId")
-                        .HasColumnType("int");
 
                     b.Property<int>("SideEffectId")
                         .HasColumnType("int");
@@ -134,28 +133,26 @@ namespace Apteka_Hipokrat.Data.Migrations
                     b.Property<int>("MedicineId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("RegisterON")
                         .HasColumnType("datetime2");
 
                     b.Property<decimal>("TotalSum")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UsersId")
+                    b.Property<string>("UserID")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("quantity")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("MedicineId");
 
-                    b.HasIndex("UsersId");
+                    b.HasIndex("UserID");
 
-                    b.ToTable("shoppings");
+                    b.ToTable("Shoppings");
                 });
 
             modelBuilder.Entity("Apteka_Hipokrat.Models.SideEffect", b =>
@@ -225,9 +222,6 @@ namespace Apteka_Hipokrat.Data.Migrations
 
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Phone")
-                        .HasColumnType("int");
 
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
@@ -432,7 +426,9 @@ namespace Apteka_Hipokrat.Data.Migrations
 
                     b.HasOne("Apteka_Hipokrat.Models.User", "Users")
                         .WithMany("Shoppings")
-                        .HasForeignKey("UsersId");
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Medicines");
 

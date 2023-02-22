@@ -42,9 +42,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ShoppingId)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -64,25 +61,22 @@
                 @Html.DisplayFor(modelItem => item.Apply)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.SideEffects.Id)
+                @Html.DisplayFor(modelItem => item.SideEffects.Description)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.MedicineTypes.Id)
+                @Html.DisplayFor(modelItem => item.MedicineTypes.Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.RegisterON)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Producers.Id)
+                @Html.DisplayFor(modelItem => item.Producers.Name) 
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShoppingId)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

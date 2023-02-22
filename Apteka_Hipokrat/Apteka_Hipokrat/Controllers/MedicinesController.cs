@@ -50,9 +50,9 @@ namespace Apteka_Hipokrat.Controllers
         // GET: Medicines/Create
         public IActionResult Create()
         {
-            ViewData["MedicineTypeId"] = new SelectList(_context.MedicineTypes, "Id", "Id");
-            ViewData["ProducerId"] = new SelectList(_context.Producers, "Id", "Id");
-            ViewData["SideEffectId"] = new SelectList(_context.SideEffects, "Id", "Id");
+            ViewData["MedicineTypeId"] = new SelectList(_context.MedicineTypes, "Id", "Name");
+            ViewData["ProducerId"] = new SelectList(_context.Producers, "Id", "Name");
+            ViewData["SideEffectId"] = new SelectList(_context.SideEffects, "Id", "Description");
             return View();
         }
 
@@ -61,7 +61,7 @@ namespace Apteka_Hipokrat.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,CatalogNumber,Composition,Apply,SideEffectId,Price,MedicineTypeId,RegisterON,ProducerId,Description,ShoppingId")] Medicine medicine)
+        public async Task<IActionResult> Create([Bind("Id,Name,CatalogNumber,Composition,Apply,SideEffectId,Price,MedicineTypeId,RegisterON,ProducerId,Description")] Medicine medicine)
         {
             if (ModelState.IsValid)
             {
@@ -99,7 +99,7 @@ namespace Apteka_Hipokrat.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,CatalogNumber,Composition,Apply,SideEffectId,Price,MedicineTypeId,RegisterON,ProducerId,Description,ShoppingId")] Medicine medicine)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,CatalogNumber,Composition,Apply,SideEffectId,Price,MedicineTypeId,RegisterON,ProducerId,Description")] Medicine medicine)
         {
             if (id != medicine.Id)
             {

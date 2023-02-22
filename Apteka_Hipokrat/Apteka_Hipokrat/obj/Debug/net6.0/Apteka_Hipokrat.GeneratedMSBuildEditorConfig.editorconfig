@@ -5,69 +5,152 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Apteka_Hipokrat
 build_property.RootNamespace = Apteka_Hipokrat
-build_property.ProjectDir = C:\Users\STUDENTS-STEM-3\Desktop\Diplomna_AptekaHipokrat\Apteka_Hipokrat\Apteka_Hipokrat\
+build_property.ProjectDir = C:\Users\Admin\OneDrive\Работен плот\Apteka-Hipokrat-\Apteka_Hipokrat\Apteka_Hipokrat\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\STUDENTS-STEM-3\Desktop\Diplomna_AptekaHipokrat\Apteka_Hipokrat\Apteka_Hipokrat
+build_property.MSBuildProjectDirectory = C:\Users\Admin\OneDrive\Работен плот\Apteka-Hipokrat-\Apteka_Hipokrat\Apteka_Hipokrat
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/Home/Index.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/Home/Privacy.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/Medicines/Create.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Medicines/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/Medicines/Delete.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Medicines/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/Medicines/Details.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Medicines/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/Medicines/Edit.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Medicines/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/Medicines/Index.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Medicines/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/Shared/Error.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/MedicineTypes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVUeXBlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/MedicineTypes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVUeXBlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/MedicineTypes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVUeXBlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/MedicineTypes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVUeXBlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/MedicineTypes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVUeXBlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Producers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Producers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Producers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Producers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Producers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/_ViewImports.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/SideEffects/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lkZUVmZmVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/SideEffects/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lkZUVmZmVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/SideEffects/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lkZUVmZmVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/SideEffects/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lkZUVmZmVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/SideEffects/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lkZUVmZmVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/_ViewStart.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/STUDENTS-STEM-3/Desktop/Diplomna_AptekaHipokrat/Apteka_Hipokrat/Apteka_Hipokrat/Views/Shared/_Layout.cshtml]
+[C:/Users/Admin/OneDrive/Работен плот/Apteka-Hipokrat-/Apteka_Hipokrat/Apteka_Hipokrat/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-geif36ylef
