@@ -56,6 +56,10 @@ namespace Apteka_Hipokrat
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
+          //  services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
+                //.AddRoles.IdentityRole()
+               // .AddEntityFrameworkStores<ApplicationDbContext>() 
+                //.AddDefaultTokenProviders();
             services.AddControllersWithViews();
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
