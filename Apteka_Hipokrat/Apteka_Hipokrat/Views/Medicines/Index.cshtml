@@ -42,6 +42,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageURL)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -73,10 +76,14 @@
                 @Html.DisplayFor(modelItem => item.RegisterON)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Producers.Name) 
+                @Html.DisplayFor(modelItem => item.Producers.Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                 <img src="@Html.DisplayFor(modelItem => item.ImageURL)" width="100"/>
+               
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

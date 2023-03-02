@@ -26,6 +26,7 @@ namespace Apteka_Hipokrat.Models
         public Producer Producers { get; set; }
 
         public string Description { get; set; }
+        public string ImageURL { get; set; }
         //1 : M
         public ICollection<Shopping> Shoppings { get; set; }  
     }

@@ -45,6 +45,10 @@ namespace Apteka_Hipokrat.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageURL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("MedicineTypeId")
                         .HasColumnType("int");
 

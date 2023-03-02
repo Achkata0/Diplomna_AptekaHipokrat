@@ -61,17 +61,18 @@ namespace Apteka_Hipokrat.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,CatalogNumber,Composition,Apply,SideEffectId,Price,MedicineTypeId,RegisterON,ProducerId,Description")] Medicine medicine)
+        public async Task<IActionResult> Create([Bind("Name,CatalogNumber,Composition,Apply,SideEffectId,Price,MedicineTypeId,ProducerId,Description,ImageURL")] Medicine medicine)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(medicine);
+                medicine.RegisterON = DateTime.Now;
+                _context.Medicines.Add(medicine);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MedicineTypeId"] = new SelectList(_context.MedicineTypes, "Id", "Id", medicine.MedicineTypeId);
-            ViewData["ProducerId"] = new SelectList(_context.Producers, "Id", "Id", medicine.ProducerId);
-            ViewData["SideEffectId"] = new SelectList(_context.SideEffects, "Id", "Id", medicine.SideEffectId);
+            ViewData["MedicineTypeId"] = new SelectList(_context.MedicineTypes, "Id", "Name", medicine.MedicineTypeId);
+            ViewData["ProducerId"] = new SelectList(_context.Producers, "Id", "Name", medicine.ProducerId);
+            ViewData["SideEffectId"] = new SelectList(_context.SideEffects, "Id", "Description", medicine.SideEffectId);
             return View(medicine);
         }
 
@@ -88,9 +89,9 @@ namespace Apteka_Hipokrat.Controllers
             {
                 return NotFound();
             }
-            ViewData["MedicineTypeId"] = new SelectList(_context.MedicineTypes, "Id", "Id", medicine.MedicineTypeId);
-            ViewData["ProducerId"] = new SelectList(_context.Producers, "Id", "Id", medicine.ProducerId);
-            ViewData["SideEffectId"] = new SelectList(_context.SideEffects, "Id", "Id", medicine.SideEffectId);
+            ViewData["MedicineTypeId"] = new SelectList(_context.MedicineTypes, "Id", "Name", medicine.MedicineTypeId);
+            ViewData["ProducerId"] = new SelectList(_context.Producers, "Id", "Name", medicine.ProducerId);
+            ViewData["SideEffectId"] = new SelectList(_context.SideEffects, "Id", "Description", medicine.SideEffectId);
             return View(medicine);
         }
 
@@ -99,7 +100,7 @@ namespace Apteka_Hipokrat.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,CatalogNumber,Composition,Apply,SideEffectId,Price,MedicineTypeId,RegisterON,ProducerId,Description")] Medicine medicine)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,CatalogNumber,Composition,Apply,SideEffectId,Price,MedicineTypeId,ProducerId,Description,ImageURL")] Medicine medicine)
         {
             if (id != medicine.Id)
             {
@@ -110,7 +111,8 @@ namespace Apteka_Hipokrat.Controllers
             {
                 try
                 {
-                    _context.Update(medicine);
+                    medicine.RegisterON = DateTime.Now;
+                    _context.Medicines.Update(medicine);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -126,9 +128,9 @@ namespace Apteka_Hipokrat.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MedicineTypeId"] = new SelectList(_context.MedicineTypes, "Id", "Id", medicine.MedicineTypeId);
-            ViewData["ProducerId"] = new SelectList(_context.Producers, "Id", "Id", medicine.ProducerId);
-            ViewData["SideEffectId"] = new SelectList(_context.SideEffects, "Id", "Id", medicine.SideEffectId);
+            ViewData["MedicineTypeId"] = new SelectList(_context.MedicineTypes, "Id", "Name", medicine.MedicineTypeId);
+            ViewData["ProducerId"] = new SelectList(_context.Producers, "Id", "Name", medicine.ProducerId);
+            ViewData["SideEffectId"] = new SelectList(_context.SideEffects, "Id", "Description", medicine.SideEffectId);
             return View(medicine);
         }
 

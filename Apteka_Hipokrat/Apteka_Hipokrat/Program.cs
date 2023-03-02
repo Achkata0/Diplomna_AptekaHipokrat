@@ -1,5 +1,6 @@
 using Apteka_Hipokrat.Data;
 using Apteka_Hipokrat.Models;
+using Apteka_Hipokrat.Service;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,7 +19,8 @@ namespace Apteka_Hipokrat
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
+            builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
             builder.Services.AddControllers(
@@ -37,7 +39,7 @@ namespace Apteka_Hipokrat
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.PrepareDataBase().Wait();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -53,16 +55,12 @@ namespace Apteka_Hipokrat
 
             app.Run();
         }
-        public IConfiguration Configuration { get; }
-        public void ConfigureServices(IServiceCollection services)
-        {
-          //  services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
-                //.AddRoles.IdentityRole()
-               // .AddEntityFrameworkStores<ApplicationDbContext>() 
-                //.AddDefaultTokenProviders();
-            services.AddControllersWithViews();
-            services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-        }
+        //public IConfiguration Configuration { get; }
+        //public void ConfigureServices(IServiceCollection services)
+        //{    
+        //    services.AddControllersWithViews();
+        //    services.AddDbContext<ApplicationDbContext>(options =>
+        //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+        //}
     }
 }

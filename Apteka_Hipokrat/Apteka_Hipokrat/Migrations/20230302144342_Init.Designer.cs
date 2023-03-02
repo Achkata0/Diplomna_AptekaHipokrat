@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Apteka_Hipokrat.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230222161238_Achko")]
-    partial class Achko
+    [Migration("20230302144342_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -44,6 +44,10 @@ namespace Apteka_Hipokrat.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageURL")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
