@@ -59,7 +59,7 @@ namespace Apteka_Hipokrat.Controllers
         // POST: Medicines/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost] 
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Name,CatalogNumber,Composition,Apply,SideEffectId,Price,MedicineTypeId,ProducerId,Description,ImageURL")] Medicine medicine)
         {
