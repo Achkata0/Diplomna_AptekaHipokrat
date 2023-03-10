@@ -7,23 +7,43 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Apteka_Hipokrat.Data;
 using Apteka_Hipokrat.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Apteka_Hipokrat.Controllers
 {
+    [Authorize] 
     public class ShoppingsController : Controller
     {
+      
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<User> _userManager;
 
-        public ShoppingsController(ApplicationDbContext context)
+        public ShoppingsController(ApplicationDbContext context, UserManager<User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Shoppings
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Shoppings.Include(s => s.Medicines).Include(s => s.Users);
-            return View(await applicationDbContext.ToListAsync());
+            if (User.IsInRole("Admin")) 
+            {
+                var applicationDbContext = _context.Shoppings.Include(s => s.Medicines).Include(s => s.Users);
+                return View(await applicationDbContext.ToListAsync());
+            }
+            else
+            {
+                var currentUser = _userManager.GetUserId(User);
+                var myOrders = _context.Shoppings
+                               .Include(o => o.Medicines)
+                               .Include(u => u.Users) 
+                               .Where(x => x.UserID == currentUser.ToString()) 
+                               .ToListAsync();
+
+                return View(await myOrders);
+            }
         }
 
         // GET: Shoppings/Details/5
@@ -47,11 +67,16 @@ namespace Apteka_Hipokrat.Controllers
         }
 
         // GET: Shoppings/Create
-        public IActionResult Create()
+        public IActionResult Create(int? medicineId) 
         {
-            ViewData["MedicineId"] = new SelectList(_context.Medicines, "Id", "Id");
-            ViewData["UserID"] = new SelectList(_context.Users, "Id", "Id");
-            return View();
+            Shopping shopping = new Shopping();
+            if (medicineId != null) 
+            {
+                shopping.MedicineId = (int)medicineId; 
+            }
+            //ViewData["MedicineId"] = new SelectList(_context.Medicines, "Id", "Id");
+            //ViewData["UserID"] = new SelectList(_context.Users, "Id", "Id");
+            return View(shopping); 
         }
 
         // POST: Shoppings/Create
@@ -59,16 +84,21 @@ namespace Apteka_Hipokrat.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserID,MedicineId,Quantity,TotalSum,RegisterON")] Shopping shopping)
+        public async Task<IActionResult> Create([Bind("MedicineId,Quantity,TotalSum")] Shopping shopping)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(shopping);
+                decimal qurentPrice = _context.Medicines.FirstOrDefault(m => m.Id == shopping.MedicineId).Price;
+                shopping.TotalSum = shopping.Quantity * qurentPrice; //+ _context.Shoppings.Include(x => x.Medicines)
+                //    .Where(x => x.Id == shopping.MedicineId).Select(x => x.);
+                shopping.RegisterON = DateTime.Now; 
+                shopping.UserID = _userManager.GetUserId(User); 
+                _context.Shoppings.Add(shopping);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index)); 
             }
-            ViewData["MedicineId"] = new SelectList(_context.Medicines, "Id", "Id", shopping.MedicineId);
-            ViewData["UserID"] = new SelectList(_context.Users, "Id", "Id", shopping.UserID);
+            //ViewData["MedicineId"] = new SelectList(_context.Medicines, "Id", "Id", shopping.MedicineId);
+            //ViewData["UserID"] = new SelectList(_context.Users, "Id", "Id", shopping.UserID);
             return View(shopping);
         }
 
@@ -86,7 +116,7 @@ namespace Apteka_Hipokrat.Controllers
                 return NotFound();
             }
             ViewData["MedicineId"] = new SelectList(_context.Medicines, "Id", "Id", shopping.MedicineId);
-            ViewData["UserID"] = new SelectList(_context.Users, "Id", "Id", shopping.UserID);
+            //ViewData["UserID"] = new SelectList(_context.Users, "Id", "Id", shopping.UserID);
             return View(shopping);
         }
 
@@ -95,7 +125,7 @@ namespace Apteka_Hipokrat.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,UserID,MedicineId,Quantity,TotalSum,RegisterON")] Shopping shopping)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,MedicineId,Quantity,TotalSum")] Shopping shopping) 
         {
             if (id != shopping.Id)
             {
@@ -106,7 +136,9 @@ namespace Apteka_Hipokrat.Controllers
             {
                 try
                 {
-                    _context.Update(shopping);
+                    shopping.RegisterON = DateTime.Now;
+                    shopping.UserID = _userManager.GetUserId(User);
+                    _context.Shoppings.Update(shopping); 
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -123,7 +155,7 @@ namespace Apteka_Hipokrat.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["MedicineId"] = new SelectList(_context.Medicines, "Id", "Id", shopping.MedicineId);
-            ViewData["UserID"] = new SelectList(_context.Users, "Id", "Id", shopping.UserID);
+            //ViewData["UserID"] = new SelectList(_context.Users, "Id", "Id", shopping.UserID);
             return View(shopping);
         }
 
