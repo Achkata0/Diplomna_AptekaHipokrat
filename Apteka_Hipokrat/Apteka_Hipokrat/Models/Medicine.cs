@@ -12,7 +12,7 @@ namespace Apteka_Hipokrat.Models
         public string Apply { get; set; }
         //M : 1
         public int SideEffectId { get; set; }
-        public SideEffect SideEffects { get; set; }
+        public SideEffect SideEffects { get; set; } 
 
         [Column(TypeName = "decimal(10, 2)")]
         public decimal Price { get; set; }
@@ -23,7 +23,7 @@ namespace Apteka_Hipokrat.Models
         public DateTime RegisterON { get; set; }
         //M : 1
         public int ProducerId { get; set; }
-        public Producer Producers { get; set; }
+        public Producer Producers { get; set; } 
 
         public string Description { get; set; }
         public string ImageURL { get; set; }

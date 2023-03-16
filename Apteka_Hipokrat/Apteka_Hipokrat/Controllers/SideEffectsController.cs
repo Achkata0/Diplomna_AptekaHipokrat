@@ -58,6 +58,7 @@ namespace Apteka_Hipokrat.Controllers
         {
             if (ModelState.IsValid)
             {
+                sideEffect.RegisterON = DateTime.Now;
                 _context.Add(sideEffect);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

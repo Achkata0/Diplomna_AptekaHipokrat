@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3I/OFsb4xTokRgVxCHDEnQd1DJrgD8zp8ZrzGUnqsIc=",
+  "Hash": "nMyAZYmWr+6YiRUEm8dfZkiyMPAqrsgnGpsnvOE4Cm8=",
   "Source": "Apteka_Hipokrat",
   "BasePath": "_content/Apteka_Hipokrat",
   "Mode": "Default",
@@ -1086,6 +1086,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\css\\StyleSheet.css",
+      "SourceId": "Apteka_Hipokrat",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\",
+      "BasePath": "_content/Apteka_Hipokrat",
+      "RelativePath": "css/StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\css\\StyleSheet1.css",
+      "SourceId": "Apteka_Hipokrat",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\",
+      "BasePath": "_content/Apteka_Hipokrat",
+      "RelativePath": "css/StyleSheet1.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\StyleSheet1.css"
     },
     {
       "Identity": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\favicon.ico",

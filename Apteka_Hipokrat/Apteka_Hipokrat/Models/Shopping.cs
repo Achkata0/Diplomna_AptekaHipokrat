@@ -12,6 +12,6 @@
         public int Quantity { get; set; } 
         public decimal TotalSum { get; set; }
         public DateTime RegisterON { get; set; }  
-
+        
     }
 }

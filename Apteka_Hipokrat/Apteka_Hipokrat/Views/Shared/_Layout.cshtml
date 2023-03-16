@@ -20,29 +20,29 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Начало</a> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Политика</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Medicines" asp-action="Index">Medicines</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Medicines" asp-action="Index">Каталог</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Shoppings" asp-action="Index">Shoppings</a>
-                        </li>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Shoppings" asp-action="Index">Поръчки</a>
+                        </li> 
                         @if (User.IsInRole("Admin"))
                         {
 
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="MedicineTypes" asp-action="Index">MedicineTypes</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="MedicineTypes" asp-action="Index">Видове Лекарства</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Producers" asp-action="Index">Производители</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Producers" asp-action="Index">Producers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="SideEffects" asp-action="Index">SideEffects</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="SideEffects" asp-action="Index">Странични Ефекти</a>
                             </li>
                         }
                     </ul>
@@ -60,7 +60,22 @@
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2023 - Apteka_Hipokrat - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div> 
+       @* <div class="container">
+            &copy; 2023 - Apteka_Hipokrat - <a asp-area="" asp-controller="Medicines" asp-action="Index">Medicine</a>
         </div>
+        <div class="container">
+            &copy; 2023 - Apteka_Hipokrat - <a asp-area="" asp-controller="MedicineTypes" asp-action="Index">MedicineType</a>
+        </div>
+        <div class="container">
+            &copy; 2023 - Apteka_Hipokrat - <a asp-area="" asp-controller="Producers" asp-action="Index">Producer</a>
+        </div>
+        <div class="container">
+            &copy; 2023 - Apteka_Hipokrat - <a asp-area="" asp-controller="Shoppings" asp-action="Index">Shoppinng</a>
+        </div>
+        <div class="container">
+            &copy; 2023 - Apteka_Hipokrat - <a asp-area="" asp-controller="SideEffects" asp-action="Index">SideRffects</a>
+        </div>*@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

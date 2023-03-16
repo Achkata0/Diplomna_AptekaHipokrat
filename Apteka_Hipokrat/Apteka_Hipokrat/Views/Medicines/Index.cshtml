@@ -3,7 +3,8 @@
 @{
     ViewData["Title"] = "Index";
 }
-
+<link rel="stylesheet" type="text/css" href="~/css/StyleSheet1.css" />
+<link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" /> 
 <h1>Index</h1>
 
 <p>
@@ -25,8 +26,7 @@
                 @Html.DisplayNameFor(model => model.Apply)
             </th>
             <th>
-               @* @Html.DisplayNameFor(model => model.SideEffects)*@
-               Странични ефекти
+                @Html.DisplayNameFor(model => model.ImageURL)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Price)
@@ -44,8 +44,10 @@
                 @Html.DisplayNameFor(model => model.Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ImageURL)
+                @* @Html.DisplayNameFor(model => model.SideEffects)*@
+                Странични ефекти
             </th>
+            
             <th></th>
         </tr>
     </thead>
@@ -64,12 +66,12 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Apply)
             </td>
+                <td>
+                    <img src="@Html.DisplayFor(modelItem => item.ImageURL)" width="100" />
+
+                </td>
             <td>
-               @* @Html.DisplayFor(modelItem => item.SideEffects.Description)*@
-                    @Html.TextAreaFor(modelItem => item.SideEffects.Description,new { @readonly="readonly" })
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
+                @Html.DisplayFor(modelItem => item.Price) 
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.MedicineTypes.Name)
@@ -83,10 +85,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
-            <td>
-                 <img src="@Html.DisplayFor(modelItem => item.ImageURL)" width="100"/>
-               
-            </td>
+                <td>
+                    @* @Html.DisplayFor(modelItem => item.SideEffects.Description)*@
+                    @Html.TextAreaFor(modelItem => item.SideEffects.Description,new { @readonly="readonly" })
+                </td>
+           
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> | 

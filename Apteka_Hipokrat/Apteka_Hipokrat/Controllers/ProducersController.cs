@@ -58,6 +58,7 @@ namespace Apteka_Hipokrat.Controllers
         {
             if (ModelState.IsValid)
             {
+                //producer.RegisterON = DateTime.Now; 
                 _context.Add(producer);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
