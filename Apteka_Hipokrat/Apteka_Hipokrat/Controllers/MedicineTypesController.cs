@@ -54,7 +54,7 @@ namespace Apteka_Hipokrat.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,RegisterON")] MedicineType medicineType)
+        public async Task<IActionResult> Create([Bind("Id,Name")] MedicineType medicineType)
         {
             if (ModelState.IsValid)
             {
@@ -133,7 +133,7 @@ namespace Apteka_Hipokrat.Controllers
             }
 
             return View(medicineType);
-        }
+        } 
 
         // POST: MedicineTypes/Delete/5
         [HttpPost, ActionName("Delete")]
@@ -152,7 +152,7 @@ namespace Apteka_Hipokrat.Controllers
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
+        } 
 
         private bool MedicineTypeExists(int id)
         {

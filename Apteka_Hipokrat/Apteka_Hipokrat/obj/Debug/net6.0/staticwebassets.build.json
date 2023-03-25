@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nMyAZYmWr+6YiRUEm8dfZkiyMPAqrsgnGpsnvOE4Cm8=",
+  "Hash": "2DVdMnr9K/63goVysbLRVTMgwyHYS+rt8v610H/KghA=",
   "Source": "Apteka_Hipokrat",
   "BasePath": "_content/Apteka_Hipokrat",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Apteka_Hipokrat.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\bg.webp",
+      "SourceId": "Apteka_Hipokrat",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\",
+      "BasePath": "_content/Apteka_Hipokrat",
+      "RelativePath": "bg.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bg.webp"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\css\\site.css",
       "SourceId": "Apteka_Hipokrat",
       "SourceType": "Discovered",
@@ -1120,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\StyleSheet1.css"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\css\\StyleSheet2.css",
+      "SourceId": "Apteka_Hipokrat",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\",
+      "BasePath": "_content/Apteka_Hipokrat",
+      "RelativePath": "css/StyleSheet2.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\StyleSheet2.css"
     },
     {
       "Identity": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\favicon.ico",
@@ -2123,6 +2157,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\opop.jfif",
+      "SourceId": "Apteka_Hipokrat",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\",
+      "BasePath": "_content/Apteka_Hipokrat",
+      "RelativePath": "opop.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\opop.jfif"
     }
   ]
 }

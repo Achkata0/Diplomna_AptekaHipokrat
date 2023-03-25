@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Apteka_Hipokrat.Service
 {
-    public static class ExtansionBuldier
+    public static class ExtansionBuldier 
     {
         public static async Task<IApplicationBuilder> PrepareDataBase(this IApplicationBuilder app)
         {

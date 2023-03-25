@@ -3,14 +3,13 @@
 @{
     ViewData["Title"] = "Index";
 }
-<link rel="stylesheet" type="text/css" href="~/css/StyleSheet1.css" />
-<link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" /> 
-<h1>Index</h1>
+<h1>Медикаменти</h1>  
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Създай</a> 
 </p>
-<table class="table">
+<table class="table" style="color:white;"> 
+   
     <thead>
         <tr>
             <th>
@@ -23,7 +22,7 @@
                 @Html.DisplayNameFor(model => model.Composition)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Apply)
+                @Html.DisplayNameFor(model => model.Apply) 
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ImageURL)
@@ -49,7 +48,7 @@
             </th>
             
             <th></th>
-        </tr>
+        </tr> 
     </thead>
     <tbody>
 @foreach (var item in Model) {
@@ -61,10 +60,12 @@
                 @Html.DisplayFor(modelItem => item.CatalogNumber)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Composition)
+                @*@Html.DisplayFor(modelItem => item.Composition)*@
+                    @Html.TextAreaFor(modelItem => item.Composition,new { @readonly="readonly" })
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Apply)
+               @* @Html.DisplayFor(modelItem => item.Apply)*@
+                    @Html.TextAreaFor(modelItem => item.Apply,new { @readonly="readonly" })
             </td>
                 <td>
                     <img src="@Html.DisplayFor(modelItem => item.ImageURL)" width="100" />
@@ -76,19 +77,20 @@
             <td>
                 @Html.DisplayFor(modelItem => item.MedicineTypes.Name)
             </td>
-            <td>
+            <td> 
                 @Html.DisplayFor(modelItem => item.RegisterON)
             </td>
-            <td>
+            <td> 
                 @Html.DisplayFor(modelItem => item.Producers.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Description)
+                @*@Html.DisplayFor(modelItem => item.Description)*@
+                    @Html.TextAreaFor(modelItem => item.Description,new { @readonly="readonly" })
             </td>
                 <td>
                     @* @Html.DisplayFor(modelItem => item.SideEffects.Description)*@
                     @Html.TextAreaFor(modelItem => item.SideEffects.Description,new { @readonly="readonly" })
-                </td>
+                </td> 
            
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
@@ -99,4 +101,5 @@
         </tr> 
 }
     </tbody>
+
 </table>
