@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2DVdMnr9K/63goVysbLRVTMgwyHYS+rt8v610H/KghA=",
+  "Hash": "sdVZqNQPvplLFJYftz5JGgdjOhto27I8QLQANt8pnVQ=",
   "Source": "Apteka_Hipokrat",
   "BasePath": "_content/Apteka_Hipokrat",
   "Mode": "Default",
@@ -2174,6 +2174,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\opop.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\ммм.jpg",
+      "SourceId": "Apteka_Hipokrat",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Работен плот\\Apteka-Hipokrat-\\Apteka_Hipokrat\\Apteka_Hipokrat\\wwwroot\\",
+      "BasePath": "_content/Apteka_Hipokrat",
+      "RelativePath": "ммм.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ммм.jpg"
     }
   ]
 }

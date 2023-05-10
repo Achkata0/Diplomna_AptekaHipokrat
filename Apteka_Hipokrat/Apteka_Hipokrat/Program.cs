@@ -41,7 +41,7 @@ namespace Apteka_Hipokrat
             }
             app.PrepareDataBase().Wait();
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseStaticFiles(); 
 
             app.UseRouting();
 

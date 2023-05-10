@@ -1,6 +1,6 @@
 ﻿using Apteka_Hipokrat.Data;
 using Apteka_Hipokrat.Models;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity; 
 
 namespace Apteka_Hipokrat.Service
 {
@@ -8,9 +8,9 @@ namespace Apteka_Hipokrat.Service
     {
         public static async Task<IApplicationBuilder> PrepareDataBase(this IApplicationBuilder app)
         {
-            using var scope = app.ApplicationServices.CreateScope();
+            using var scope = app.ApplicationServices.CreateScope(); 
 
-            var services = scope.ServiceProvider;
+            var services = scope.ServiceProvider; 
 
             var loggerFactory = services.GetRequiredService<ILoggerFactory>();
             try
@@ -33,14 +33,6 @@ namespace Apteka_Hipokrat.Service
         }
         public static async Task SeedRolesAsync(RoleManager<IdentityRole> roleManager)
         {
-            //foreach (var role in Enum.GetValues(Roles))
-            //{
-            //                    var roleExist = await roleManager.RoleExistsAsync(role); 
-            //    if (!roleExist)
-            //    { }
-            //}
-
-            //Seed Roles
             await roleManager.CreateAsync(new IdentityRole("Admin"));
             await roleManager.CreateAsync(new IdentityRole("User"));
             await roleManager.CreateAsync(new IdentityRole("Guest"));

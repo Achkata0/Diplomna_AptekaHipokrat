@@ -32,15 +32,13 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Medicines" asp-action="Index">Каталог</a>
                         </li>
-                        @if (signInManager.IsSignedIn(User))
+                        @if (signInManager.IsSignedIn(User)) 
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Shoppings" asp-action="Index">Поръчки</a>
                             </li>
                             @if (User.IsInRole("Admin"))
-                            {
-
-
+                            { 
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="MedicineTypes" asp-action="Index">Видове Лекарства</a>
                                 </li> 
@@ -85,7 +83,7 @@
         </div>*@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/bo@Html.DisplayFor(modelItem => item.Name)otstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

@@ -13,12 +13,19 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
-  background-image:url("../bg.webp");
-  background-position:center;
-  background-size:cover;
-}
-nav{
+body {     
+    margin-bottom: 60px;
+    background-image: url("../bg.webp");
+    background-position: center;
+    background-size: cover;
+    /*color: white;*/ 
+} 
+nav{  
     background-color:darkcyan; 
+}
+.element-content {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin: 20px;
 }
