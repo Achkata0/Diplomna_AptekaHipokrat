@@ -53,7 +53,7 @@ namespace Apteka_Hipokrat.Controllers
             ViewData["MedicineTypeId"] = new SelectList(_context.MedicineTypes, "Id", "Name");
             ViewData["ProducerId"] = new SelectList(_context.Producers, "Id", "Name");
             ViewData["SideEffectId"] = new SelectList(_context.SideEffects, "Id", "Description");
-            return View();
+            return View(); 
         }
 
         // POST: Medicines/Create
@@ -126,7 +126,7 @@ namespace Apteka_Hipokrat.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index)); 
             }
             ViewData["MedicineTypeId"] = new SelectList(_context.MedicineTypes, "Id", "Name", medicine.MedicineTypeId);
             ViewData["ProducerId"] = new SelectList(_context.Producers, "Id", "Name", medicine.ProducerId);
@@ -156,7 +156,7 @@ namespace Apteka_Hipokrat.Controllers
         }
 
         // POST: Medicines/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("Delete")] 
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
