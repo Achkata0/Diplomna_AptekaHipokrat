@@ -3,17 +3,18 @@
 @{
     ViewData["Title"] = "Index";
 }
-<h1>Медикаменти</h1>  
+<h1 style="color:white;">Медикаменти</h1>  
 
-<p>
-    <a asp-action="Create">Създай</a> 
-</p> 
+<div class="col-6">
+    <a asp-controller="Medicines" asp-action="Create" class="btn btn-primary"> Create New Medicines</a>        
+</div> 
+<br>
 <div class="container">
     <div class="row justify-content-md-around">
 
          @foreach (var item in Model) {    
-            <div class="card" style="width:30%; height:25%; border-radius:20px; ">
-               @*<div class="row">*@
+            <div class="card" style="width:30%; height:25%; border-radius:20px; opacity:0.9; "> 
+               @*<div class="row">*@ 
                   <div class="card-body">
                     <h5 class="card-title">                         
                         @Html.DisplayFor(modelItem => item.Name)
@@ -30,64 +31,18 @@
                     <p class="card-subtitle">
                         @Html.DisplayFor(modelItem => item.Price)
                     </p>
-                    <div class="card-imag">
-                        <img src="@Html.DisplayFor(modelItem => item.ImageURL)" width="100" />
+                    <div class="card-imag"> 
+                        <img src="@Html.DisplayFor(modelItem => item.ImageURL)" width="100" /> 
                     </div>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
-                    <a asp-controller="Shoppings" asp-action="Create" asp-route-medicineId="@item.Id">Cart</a>  
-                  </div>
+
+                    <a asp-controller="Medicines" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a> |
+                    <a asp-controller="Medicines" asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Details</a> |
+                    <a asp-controller="Medicines" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-primary">Delete</a> |
+                    <a asp-controller="Shoppings" asp-action="Create" asp-route-medicineId="@item.Id" class="btn btn-primary">Cart</a> 
+
+                </div>
                @*</div>*@
             </div>
          }
     </div>
-</div>
-       
-
-         @*
-            @*  <td>
-                @Html.DisplayFor(modelItem => item.CatalogNumber)
-            </td>
-             <td>
-                @Html.DisplayFor(modelItem => item.Composition)
-               @* @Html.TextAreaFor(modelItem => item.Composition,new { @readonly="readonly" })
-            </td>
-            <td>
-               @* @Html.DisplayFor(modelItem => item.Apply)
-                    @Html.TextAreaFor(modelItem => item.Apply,new { @readonly="readonly" })
-            </td>
-                <td>
-                   
-
-                </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price) 
-            </td>
-            <td>
-               
-            </td>
-            <td> 
-               
-            </td>
-            <td> 
-               
-            </td>
-           @* <td>
-                @Html.DisplayFor(modelItem => item.Description)
-                    @Html.TextAreaFor(modelItem => item.Description,new { @readonly="readonly" })
-            </td>*@
-            @*<td>*@
-            @* @Html.DisplayFor(modelItem => item.SideEffects.Description)
-                    @Html.TextAreaFor(modelItem => item.SideEffects.Description,new { @readonly="readonly" })
-                </td> 
-         
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> | 
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
-                <a asp-controller="Shoppings" asp-action="Create" asp-route-medicineId="@item.Id">Cart</a> 
-            </td>
-
-          *@
-   
+</div>      

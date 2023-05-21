@@ -3,11 +3,12 @@
 @{
     ViewData["Title"] = "Index";
 }
-<h1>Index</h1>
+<h1 style="color:white;">Странични Ефекти</h1> 
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class=col-6>
+    <a asp-controller="SideEffects" asp-action="Create" class="btn btn-primary">Create New SideEffect</a> 
+</div>
+
 <table class="table" style="color:white;"> 
     <thead>
         <tr>
@@ -30,9 +31,9 @@
                 @Html.DisplayFor(modelItem => item.RegisterON)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-primary">Delete</a>
             </td>
         </tr>
 }

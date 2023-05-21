@@ -4,11 +4,7 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Редактиране на лекарство</h1>
-<style>
-    /*some css code for creating a design........*/ 
-</style>
-<h4>Лекарства</h4>
+<h1 style="color:white;">Редактиране на лекарство</h1>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -16,37 +12,37 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label" style="color:white;"></label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CatalogNumber" class="control-label"></label>
+                <label asp-for="CatalogNumber" class="control-label" style="color:white;"></label>
                 <input asp-for="CatalogNumber" class="form-control" />
                 <span asp-validation-for="CatalogNumber" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Composition" class="control-label"></label>
+                <label asp-for="Composition" class="control-label"style="color:white;"></label>
                 <input asp-for="Composition" class="form-control" />
                 <span asp-validation-for="Composition" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Apply" class="control-label"></label>
+                <label asp-for="Apply" class="control-label" style="color:white;"></label>
                 <input asp-for="Apply" class="form-control" />
                 <span asp-validation-for="Apply" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SideEffectId" class="control-label"></label>
+                <label asp-for="SideEffectId" class="control-label" style="color:white;"></label>
                 <select asp-for="SideEffectId" class="form-control" asp-items="ViewBag.SideEffectId"></select>
                 <span asp-validation-for="SideEffectId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
+                <label asp-for="Price" class="control-label" style="color:white;"></label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MedicineTypeId" class="control-label"></label>
+                <label asp-for="MedicineTypeId" class="control-label" style="color:white;"></label>
                 <select asp-for="MedicineTypeId" class="form-control" asp-items="ViewBag.MedicineTypeId"></select>
                 <span asp-validation-for="MedicineTypeId" class="text-danger"></span>
             </div>
@@ -56,29 +52,30 @@
                 <span asp-validation-for="RegisterON" class="text-danger"></span>
             </div>*@
             <div class="form-group">
-                <label asp-for="ProducerId" class="control-label"></label>
+                <label asp-for="ProducerId" class="control-label" style="color:white;"></label>
                 <select asp-for="ProducerId" class="form-control" asp-items="ViewBag.ProducerId"></select>
                 <span asp-validation-for="ProducerId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
+                <label asp-for="Description" class="control-label" style="color:white;"></label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div> 
             <div class="form-group">
-                <label asp-for="ImageURL" class="control-label"></label>
+                <label asp-for="ImageURL" class="control-label" style="color:white;"></label>
                 <input asp-for="ImageURL" class="form-control" />
                 <span asp-validation-for="ImageURL" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <br /> 
+            <div class="form-group" style="margin:10px;">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
-
+<br />
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-primary" style="margin:10px;">Back to List</a>
 </div>
 
 @section Scripts {
