@@ -28,7 +28,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Начало</a> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Политика</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">За нас</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Medicines" asp-action="Index">Каталог</a>
@@ -52,7 +52,7 @@
                             }
                         }
                     </ul> 
-                    <partial name="_LoginPartial" />
+                    <partial name="_LoginPartial" /> 
                 </div>
             </div>
         </nav>
@@ -62,9 +62,9 @@
             @RenderBody()
         </main>
     </div>
-    <footer class="border-top footer text-muted" >
+    <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Apteka_Hipokrat - <a asp-area="" asp-controller="Home" asp-action="Privacy">За нас</a>
+            &copy; 2023 - Apteka_Hipokrat - <a asp-area="" asp-controller="Home" asp-action="Privacy" class="btn btn-primary">За нас</a>
         </div> 
       
     </footer>

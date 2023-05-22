@@ -67,16 +67,17 @@
                 <span asp-validation-for="ImageURL" class="text-danger"></span>
             </div>
             <br /> 
-            <div class="form-group" style="margin:10px;">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="form-group" style="margin:15px 0px 0px 0px;">
+                <input type="submit" value="Save" class="btn btn-primary" /> |
+                <a asp-action="Index" class="btn btn-primary" style="margin:10px;">Back to List</a>
             </div>
         </form>
     </div>
 </div>
 <br />
-<div>
-    <a asp-action="Index" class="btn btn-primary" style="margin:10px;">Back to List</a>
-</div>
+@*<div>
+    
+</div>*@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
